@@ -1,0 +1,13 @@
+div {
+    display: inline-block;
+}
+
+div label {
+    display: block;
+}
+
+#errorInputs {
+	color:#fd1e1e; 
+	font-size:28px;
+}
+
