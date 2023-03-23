@@ -67,15 +67,6 @@
         $unit = (450) / ($maxBar);
         $maxTick = intval($maxBar);
 
-        // $tick1 = intval($maxTick / 8 * 1);
-        // $tick2 = intval($maxTick / 8 * 2);
-        // $tick3 = intval($maxTick / 8 * 3);
-        // $tick4 = intval($maxTick / 8 * 4);
-        // $tick5 = intval($maxTick / 8 * 5);
-        // $tick6 = intval($maxTick / 8 * 6);
-        // $tick7 = intval($maxTick / 8 * 7);
-        $tick8 = $maxTick;
-
         $valueOne = $_POST["valueOne"] * $unit;
         $valueTwo = $_POST["valueTwo"] * $unit;
         $valueThree = $_POST["valueThree"] * $unit;
@@ -123,7 +114,7 @@
                         <text dy='.71em' y='9' x='0' style='text-anchor: middle;'>$labelFour</text>
                     </g>
                         
-                    <path class='domain' d='M0,6V0H900V6'></path>
+                    <path d='M0,6V0H900V6'></path>
                 </g>
 
                 <g class='y axis'>
@@ -149,10 +140,10 @@
                     
                     <g class='tick' transform='translate(0,0)'>
                         <line x2='-6' y2='0'></line>
-                        <text dy='.32em' x='-9' y='0' style='text-anchor: end;'>$tick8</text>
+                        <text dy='.32em' x='-9' y='0' style='text-anchor: end;'>$maxTick</text>
                     </g>
                     
-                    <path class='domain' d='M-6,0H0V450H-6'></path>
+                    <path d='M-6,0H0V450H-6'></path>
                 </g>
 
                 <g transform='translate(0,450)'>
