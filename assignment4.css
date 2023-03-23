@@ -11,3 +11,22 @@ div label {
 	font-size:28px;
 }
 
+
+
+.bar {
+    fill: rgba(161, 211, 240, 0.973);
+  }
+
+.axis {
+    font: 10px sans-serif;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.x.axis path {
+    display: none;
+}
